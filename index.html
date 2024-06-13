@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 60%</title>
+<link href="bai60%.css" rel="Stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+<script type="text/javascript" src="bài 60.js"></script>
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="container nav-container">
+            <a href="" class="logo">Phương Thảo</a>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#servies">Servies</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><i class="fa-solid fa-circle-user"></i></a></li>   
+            </ul>
+        </div>
+    </header>
+
+    <!--home-->
+    <section id="home" class="section">
+        <div class="container header-container">
+            <div class="header-left">
+                <img src="anh1.jpg" alt="">
+            </div>
+
+            <div class="header-right">
+                <p><b>Hello, I'm</b></p>
+                <br>
+                <h1 class="logo">Phương Thảo</h1>
+                <br>
+                <h4>Sinh viên ngành Toán - HNMU</h4>
+                <div class="header-button">
+                    <a href="#about" class="btn btn1">About</a>
+                    <a href="#contact" class="btn">Contact</a> 
+                </div>
+                <div class="header-links">
+                    <a href="index.html" target="_blank" class="icon2"><i class="fa-brands fa-github"></i></a>
+        
+                   <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="icon2"><i class="fa">&#xf095</i></a>
+                    <a href="https://www.facebook.com/thaos.kieusphuongs" target="_blank" class="icon2"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="section">
+        <h1 class="heading">Phương Thảo</h1>
+        <div class="container about-container">
+            <div class="about-left">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="ảnh 2.jpg" alt="">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="ảnh 3.jpg" alt="">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="ảnh 4.jpg" alt="">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="anh1.jpg" alt="">
+                      </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+            </div>
+            <div class="about-right">
+          
+                <ul>
+                   <li> Mình là PHương Thảo, một sinh viên năm hai đang theo học ngành Toán Ứng Dụng. </li>    
+                  <br>
+                   <li>Đam mê của mình với toán bắt đầu từ khi còn nhỏ, và ngày càng phát triển khi khám phá ra sức mạnh của nó trong việc giải quyết các vấn đề thực tế. Mình thích đối mặt với những thách thức toán học mới và tìm hiểu cách áp dụng chúng trong các lĩnh vực như khoa học máy tính, kinh tế.</li>
+                    <br>
+                   <li>Năm hai là một thời điểm thú vị, nơi mình có cơ hội chuyên sâu hơn vào các lĩnh vực toán học và tin học cụ thể và bắt đầu áp dụng chúng vào các dự án của riêng mình. Mình hi vọng sẽ có thêm nhiều cơ hội để học hỏi và phát triển kỹ năng của mình trong lĩnh vực này.</li>
+                   <br>
+                   <li>Việc bạn yêu toán cũng có thể là một phần của nguyên nhân khiến bạn muốn trở thành giáo viên. </li>
+                   <br>
+                   <li>Sự đam mê với môn toán không chỉ là niềm vui cá nhân mà còn là nguồn động viên để truyền đạt kiến thức này cho người khác. </li>
+                   <br>
+                   <li>Bằng cách truyền cảm hứng và sự yêu thích của mình với toán học, mình có thể giúp học sinh khám phá và phát triển sự hiểu biết và kỹ năng trong môn học này.</li>
+                   <br>
+                   <li>Đồng thời, việc truyền đạt kiến thức toán học cũng giúp tạo ra một tương lai vững chắc cho học sinh, mở ra nhiều cơ hội hơn trong sự nghiệp và cuộc sống của họ.</li>
+                </ul>
+                <br>
+                <a href="index.html" class="btn">Xem thêm</a> 
+             </div>   
+        </div>
+    </section>
+
+    <!--servies-->
+    <section id="servies" class="section">
+        <h1 class="heading">Servies</h1>
+        <div class="container servies-container">
+            <div class="servies-box">
+                <h2>Công nghệ</h2>
+                <div class="servies">
+                    <div class="servies-div">
+                        <i class="fa-solid fa-h"></i>
+                        <div>
+                            <h4>HTML</h4>
+                            <h2 style="font-weight: 500px">_______<span style="color: #bbb">___</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="servies-div">
+                        <i class="fa-solid fa-c"></i>
+                        <div>
+                            <h4>CSS</h4>
+                            <h2 style="font-weight: 500px">______<span style="color: #bbb">____</span></h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="servies-box">
+            <h2>Tự nhiên</h2>
+                <div class="servies">
+                    <div class="servies-div">
+                        <i class="fa-solid fa-t"></i>
+                        <div>
+                            <h4>Toán</h4>
+                            <h2 style="font-weight: 500px">________<span style="color: #bbb">__</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="servies-div">
+                        <i class="fa-solid fa-h"></i>
+                        <div>
+                            <h4>Hóa</h4>
+                            <h2 style="font-weight: 500px">________<span style="color: #bbb">__</span></h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--portfolio-->
+    <section id="portfolio" class="section">
+        <h1 class="heading">Portfolio</h1>
+        <div class="homework1">
+            <div class="LAB">
+                <h3>Buổi 1</h3>
+                <div class="baitap baitap1">
+                    <p><a href="Buổi1.html" target="_blank">Bài 1</a></p>
+                    
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 2</h3>
+                <div class="baitap baitap2">
+                    <p><a href="index2.1.html" target="_blank">Bài 1</a></p>
+                    <p><a href="Bài 2.2.html" target="_blank">Bài 2</a></p>
+                    <p><a href="Bài 2.3.html" target="_blank">Bài 3</a></p>
+                    <p><a href="Bài 2.4.html" target="_blank">Bài 4</a></p>
+                    <p><a href="Bài 2.5.html" target="_blank">Bài 5</a></p>
+                    <p><a href="Bài 2.6.html" target="_blank">Bài 6</a></p>
+                    <p><a href="index2.7.html" target="_blank">Bài 7</a></p>
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 3 </h3>
+                <div class="baitap baitap3">
+                    <p><a href="Bài 3.1.html" target="_blank">Bài 1</a></p>
+                    <p><a href="Bài 3.2.1.html" target="_blank">Bài 2.1</a></p>
+                    <p><a href="Bài 3.2.2.html" target="_blank">Bài 2.2</a></p>
+                    <p><a href="Bài 3.3.1.html" target="_blank">Bài 3.1</a></p>
+                    <p><a href="Bài 3.3.2.html" target="_blank">Bài 3.2</a></p>
+                    <p><a href="Bài 3.3.3.html" target="_blank">Eài 3.3</a></p>
+                    <p><a href="Bài 3.4.1.html" target="_blank">Bài 4.1</a></p>
+                    <p><a href="Bài 3.4.2.html" target="_blank">Bài 4.2</a></p>
+                  
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 4</h3>
+                <div class="baitap baitap4">
+                    <p><a href="Bài 4.1.html" target="_blank">Bài 1</a></p>
+                    <p><a href="Bài 4.2.html" target="_blank">Bài 2</a></p>
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 6</h3>
+                <div class="baitap baitap6">
+                    <p><a href="bài 6.3.html" target="_blank" title="Form đăng ký">Bài trên lớp</a></p>
+                    <p><a href="bài 6.1.html" target="_blank" title="Slideshow">Bài 1</a></p>
+                    <p><a href="bài 6.2.html" target="_blank" title="Change colors">Bài 2</a></p>
+                   
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 7</h3>
+                <div class="baitap baitap7">
+                    <p><a href="thbaibuoi6.html" target="_blank">Bài trên lớp</a></p>
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 8</h3>
+                <div class="baitap baitap8">
+                    <p><a href="Bài 7.1.html">Bài 1</a></p>
+                    <p><a href="Bai7.2.html">Bài 2</a></p>
+                    <p><a href="Bài 7.3.1.html">Bài 3.1</a></p>
+                    <p><a href="Bài 7.3.2.html">Bài 3.2</a></p>
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Buổi 9</h3>
+                <div class="baitap baitap9">
+                    <p><a href="Buổi 9.html" target="_blank">Bài trên lớp</a></p>
+                </div>
+            </div>
+            <div class="LAB">
+                <h3>Bài 60%</h3>
+                <div class="baitap baitap9">
+                    <p><a href="index.html" target="_blank">Bài 60%</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+     <!--testimonials-->
+     <section id="testimonials" class="section">
+        <h1 class="heading">Testimonials</h1>
+        <br>
+        <br>
+        <div class="container testimonials-container">
+            <div class="slide-content">
+                <article class="slide card card1">
+                     <img src="ảnh thungan.jpg" alt="">
+                     <br>
+                     <br>
+                     <h3>Thu Ngân</h3>
+                     <p style="font-size: 22px">Thu Ngân nói rằng cảm thấy thú vị khi nói chuyện với tôi, vì tôi có thể đưa ra các câu trả lời hay qua trải nghiệm giao tiếp với tôi.</p>
+                </article>
+
+                <article class="slide card card1">
+                    <img src="anh pyen.jpg" alt="">
+                    <br>
+                    <br>
+                    <h3>Phạm Yến</h3>
+                    <p style="font-size: 22px">Bạn có khả năng đưa ra các giải pháp sáng tạo và mang lại cái nhìn mới mẻ cho các vấn đề khó khăn.</p>                  
+               </article>
+
+               <article class="slide card card1">
+                <img src="ảnh dyen.jpg." alt="">
+                <br>
+                <br>
+                <h3>Đào Yến</h3>
+                <p style="font-size: 22px">Đào Yến nói rằng tôi có thể có cảm xúc, thể hiện được sự đồng cảm với cậu chuyện của cô ấy.</p>                  
+           </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+    <section id="contact" class="section">
+        <h1 class="heading">Contact me</h1>
+        <div class="container contact-container">
+            <div class="contact-left">
+                <a href="https://www.facebook.com/thaos.kieusphuongs" target="_blank" class="icon2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kpthao6?igsh=cDViM2x4ZDh1dmE3" target="_blank" class="icon2"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kieuphuongthao4?_t=8mx9wDikCbn&_r=1" target="_blank" class="icon2"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+            <div class="contact-right">
+                <form action="#" >
+                    
+                    <input type="text" required placeholder="Your name">
+                    <input type="email" required placeholder="Your email">
+                    <input type="number" equired placeholder="Your number">
+                    <textarea name="messenger" cols="30" rows="4" required placeholder="Your messenger"></textarea>
+                    <button type="submit" class="btn">Send</button>
+                  
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="bài 60.js"></script>
+    <!--footer-->
+    <footer>
+        <div class="container footer-container"><h2>THANK YOU</h2></div>
+    </footer>
+
+</html>

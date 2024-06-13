@@ -1,0 +1,43 @@
+
+.container{
+    font: normal;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.header{
+    width: 92%;
+    height: 50%;
+    background-color: rgba(41, 206, 140, 0.719);
+    text-align: center;
+}
+
+.col{
+    float: left;
+    width: 27.5%;
+    padding:0 20px;
+}
+
+.body1{
+    float: none;
+}
+
+.footer{
+    width: 92%;
+    height: 50%;
+    background-color: rgba(206, 41, 118, 0.719);
+    text-align: center;  
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    
+    .body1 {
+            width: 100%;
+            height: auto;
+          }
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }

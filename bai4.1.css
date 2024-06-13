@@ -1,0 +1,11 @@
+ div {
+    background-color: rgb(126, 157, 250);
+    width: 300px;
+    border: 15px solid rgb(62, 188, 62);
+    padding: 50px;
+    margin: 20px;
+  }
+  p{ 
+      background-color: yellow;
+      max-width: 300px;
+  }
